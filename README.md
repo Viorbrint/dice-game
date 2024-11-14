@@ -33,17 +33,17 @@ To run the project, follow these steps:
 
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/Viorbrint/dice-game
+    ```bash
+    git clone https://github.com/Viorbrint/dice-game
 
 2. Navigate to the project folder:
 
-   ```bash
+    ```bash
     cd dice-game
 
 3. Restore dependencies:
 
-   ```bash
+    ```bash
     dotnet restore
 
 4. Build and run the project:
