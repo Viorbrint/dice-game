@@ -1,5 +1,7 @@
 # Dice Game
 
+[![Watch the video](https://img.youtube.com/vi/bYB871bkhNo/0.jpg)](https://www.youtube.com/watch?v=bYB871bkhNo)
+
 This is a console dice game where the player and the computer take turns rolling dice and comparing results. The game includes the generation of random numbers for fair rolls using HMAC, as well as a probability table for different dice throws.
 
 ## Description
