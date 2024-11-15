@@ -1,15 +1,14 @@
 namespace Dice.Services;
 
 using System.Security.Cryptography;
-using Dice.Utils;
 
 public class FairnessService : IFairnessService
 {
     private const int Size = 256 / 8;
 
-    public (int, string, string) GenerateFairNumber(int max)
+    public (int, string, string) GenerateFairNumber(int toExclusive)
     {
-        int number = RandomNumber.Generate(max);
+        int number = RandomNumberGenerator.GetInt32(toExclusive);
         byte[] key = GenerateKey();
         byte[] hmac = CalculateHMAC(number, key);
         return (number, BytesToString(key), BytesToString(hmac));

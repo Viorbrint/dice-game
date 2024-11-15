@@ -4,13 +4,8 @@ using System.Security.Cryptography;
 
 public static class RandomNumber
 {
-    public static int Generate(int max)
+    public static int Generate(byte max)
     {
-        if (max <= 0 || max > byte.MaxValue)
-        {
-            throw new ArgumentException("max should be between 1 and 255");
-        }
-
         using (var rng = RandomNumberGenerator.Create())
         {
             int maxAcceptableValue = byte.MaxValue - (byte.MaxValue % (max + 1));

@@ -46,7 +46,7 @@ public class Game
     {
         _consoleWriter.WritePositiveLine("Let's determine who makes the first move.");
 
-        var (computerChoice, key, hmac) = _fairnessService.GenerateFairNumber(1);
+        var (computerChoice, key, hmac) = _fairnessService.GenerateFairNumber(2);
         _consoleWriter.WriteLine($"I selected a random value in the range 0..1 (HMAC={hmac}).");
 
         int guess = _menu.GetFirstMoveGuess();
